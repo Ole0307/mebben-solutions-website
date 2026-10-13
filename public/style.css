@@ -354,7 +354,7 @@ section[id] { scroll-margin-top: 96px; }
   font-optical-sizing: auto;
   color: var(--ink);
 }
-.line { display: block; overflow: hidden; padding-bottom: 0.08em; }
+.line { display: block; overflow: hidden; padding-bottom: 0.26em; margin-bottom: -0.26em; }
 .line > span { display: block; transform: translateY(105%); animation: lineUp 1.05s var(--ease) forwards; }
 .line:nth-child(1) > span { animation-delay: 0.12s; }
 .line:nth-child(2) > span { animation-delay: 0.26s; }
