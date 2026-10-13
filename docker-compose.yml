@@ -1,0 +1,11 @@
+services:
+  mebben-solutions:
+    image: nginx:alpine
+    container_name: mebben-solutions
+    restart: unless-stopped
+    volumes:
+      - ./public:/usr/share/nginx/html:ro
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    ports:
+      # Nur lokal binden; Nginx Proxy Manager leitet darauf weiter.
+      - "172.17.0.1:8085:80"
